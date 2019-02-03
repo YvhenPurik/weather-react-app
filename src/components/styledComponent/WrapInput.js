@@ -1,17 +1,18 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export default styled.div`
-  position: relative; 
-  width: 30%;
+  position: relative;
+  width: 20%;
   padding-right: 0;
-  top:-300px;
+  left: -30px;
+  top: -300px;
   border-radius: 9999px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: rows;
   background: white;
-  &:hover  {
-    width: 32%;
+  transition: 0.8s;
+  &:hover {
+    width: 22%;
   }
-  
-`
+`;
