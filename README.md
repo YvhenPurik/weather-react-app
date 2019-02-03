@@ -1,7 +1,7 @@
 Weather-react-app which finds the weather in your area by
 API https://openweathermap.org
 
-![Alt text](weatherApp.png?raw=true "AppImg")
+![Alt text](weatherApp.png?raw=true 'AppImg')
  
  
  
