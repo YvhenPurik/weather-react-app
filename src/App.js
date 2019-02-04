@@ -17,7 +17,7 @@ var moment = require('moment');
 class App extends Component {
   constructor(props) {
     super(props);
-    this.inputRef = React.createRef();
+  
 
     
     
@@ -35,6 +35,7 @@ class App extends Component {
     };
   }
   componentDidMount() {
+    const store = this.props.Store;
     this.getLocation();
   }
   
@@ -89,9 +90,8 @@ class App extends Component {
   };
 
   submitWeather = async e => {
-    // e.preventDefault();
-
-    if (this.state.inputCity !== '') {
+    e.preventDefault();
+if (this.state.inputCity !== '') {
       const api_call = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${this.state.inputCity}&appid=${API_KEY}`
       );
@@ -107,7 +107,7 @@ class App extends Component {
           temperature: Math.round(data.main.temp - 273),
         });
         const localData = JSON.parse(localStorage.getItem('weatherStor'));
-        localStorage.setItem('weatherStor', JSON.stringify([...localData || data, data]));
+        localStorage.setItem('weatherStor', JSON.stringify({...localData || data, data}));
         this.props.addWeather(data)
       }
     }

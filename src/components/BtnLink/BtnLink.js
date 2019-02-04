@@ -15,7 +15,7 @@ import '../../App.css';
                 <div class="btn2-home"></div>
             </div>
             <div class="btn-city">Saved cities{this.state.sevedCitiesCoutn}
-                <div class="btn2-city"></div>
+            
             </div>
          </div> 
             
