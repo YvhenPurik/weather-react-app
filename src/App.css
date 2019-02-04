@@ -3,16 +3,7 @@
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  
-  min-height: 100vh;
+  min-height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +22,37 @@
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  
+  min-height: 600px;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100%;
+	color: #fff;
+	background: linear-gradient(-45deg, rgb(240, 116, 78), rgb(235, 67, 117), rgb(34, 167, 216), rgb(35, 213, 145));
+	background-size: 400% 400%;
+	-webkit-animation: Gradizzle 14s ease infinite;
+	-moz-animation: Gradizzle 15s ease infinite;
+  animation: Gradizzle 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 200px;
 }
 
 @-webkit-keyframes Gradizzle {
@@ -99,7 +121,7 @@ code {
 	margin: 20px;
 	border-radius: 5px;
   position: relative;
-  top:70px;
+  top:20px;
 }
 .card p{
   color:grey;
@@ -147,6 +169,71 @@ AtomSpinner{
   box-sizing: border-box !important;
 }
 
+.btnHolder{
+  margin-bottom: 70px;
+}
+.btn-home,
+.btn2-home {
+  position: absolute;
+  top:40px;
+  left:450px;
+  display: block;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  /* line-height: 40px; */
+  color: rgba(255,255,255,0.9);
+  border-radius: 50px;
+  border:2px solid white;
+  background: transparent;
+}
+.btn2-home {
+  cursor: pointer;
+  background: white;
+  color:grey;
+  position: absolute;
+  top:20px;
+  margin-top: 0px;
+  z-index: -1;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  opacity: 0.8;
+}
+
+.btn-city,
+.btn2-city {
+  position: absolute;
+  top:40px;
+  left:800px;
+  display: block;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  /* line-height: 40px; */
+  color: rgba(255,255,255,0.9);
+  border-radius: 50px;
+  border:2px solid white;
+  background: transparent;
+}
+.btn2-city {
+  cursor: pointer;
+  background: white;
+  color:grey;
+  position: absolute;
+  top:20px;
+  margin-top: 0px;
+  z-index: -1;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  opacity: 0.8;
+}
+
+
+
 
 
 
@@ -164,8 +251,8 @@ AtomSpinner{
   background-position: top right;
   border: 0;
   border-radius: 9999px;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   /* border-top-right-radius:25px;
   border-bottom-right-radius:25px;
   border-top-left-radius: 5px;

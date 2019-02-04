@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import { connect } from 'react-redux';
 
 import Card from './components/Card/Card'
 import Holder from './components/styledComponent/Holder';
-import Btn from './components/styledComponent/btn';
+import BtnLink from './components/BtnLink/BtnLink';
 import WrapInput from './components/styledComponent/WrapInput';
 import InputCity from './components/input/Input';
 import ButtonGeo from './components/BtnGeo/ButtonGeo';
@@ -106,6 +106,9 @@ class App extends Component {
           weatherMain: data.weather[0].main,
           temperature: Math.round(data.main.temp - 273),
         });
+        const localData = JSON.parse(localStorage.getItem('weatherStor'));
+        localStorage.setItem('weatherStor', JSON.stringify([...localData || data, data]));
+        this.props.addWeather(data)
       }
     }
   };
@@ -124,9 +127,9 @@ class App extends Component {
     const { weatherName, weatherDescription, temperature, dateDay, weatherMain } = this.state;
     return (
       <div className="App">
-      
+      <BtnLink/>
         <header className="App-header">
-        {/* <Btn theme={{ main: "mediumseagreen" }}/> <Btn theme={{ main: "red" }}/> */}
+        
           <Holder className="holder">
          
 
@@ -155,4 +158,21 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  Store: state.weather
+})
+
+const mapDispatchToProps = dispatch => ({
+  addWeather: (data) => {
+    dispatch({ type: 'ADD_WEATHER', data: data})
+  },
+  updateWeather: (data) => {
+    dispatch({ type: 'UPDATE_WEATHER', data: data })
+  }
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
+

@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export default styled.div`
   position: relative;
-  width: 300px;
+  width: 360px;
   padding-right: 0;
   left: -25px;
-  top: -200px;
+  top: -260px;
   border-radius: 9999px;
   display: flex;
   flex-wrap: wrap;
@@ -14,6 +14,6 @@ export default styled.div`
   transition: 0.8s;
   
   &:hover {
-    width: 320px;
+    width: 380px;
   }
 `;
