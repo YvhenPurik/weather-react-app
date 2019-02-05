@@ -90,7 +90,7 @@ class App extends Component {
   };
 
   submitWeather = async e => {
-    e.preventDefault();
+    // e.preventDefault();
 if (this.state.inputCity !== '') {
       const api_call = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${this.state.inputCity}&appid=${API_KEY}`
@@ -106,8 +106,11 @@ if (this.state.inputCity !== '') {
           weatherMain: data.weather[0].main,
           temperature: Math.round(data.main.temp - 273),
         });
+
+        // 
         const localData = JSON.parse(localStorage.getItem('weatherStor'));
-        localStorage.setItem('weatherStor', JSON.stringify({...localData || data, data}));
+        const newWeather = {...localData, [data.id]: data}
+        localStorage.setItem('weatherStor', JSON.stringify({...newWeather }));
         this.props.addWeather(data)
       }
     }

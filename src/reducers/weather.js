@@ -8,9 +8,9 @@ const initialState = {
     switch(action.type) {
       case 'ADD_WEATHER':
      return {
-        ...state,
-        action.data
-      }
+      ...state,
+     [action.data.id]: action.data
+  }
    
       case 'UPDATE_WEATHER':
         console.log("action.data", action.data)

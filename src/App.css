@@ -170,13 +170,14 @@ AtomSpinner{
 }
 
 .btnHolder{
-  margin-bottom: 70px;
+  width: 600px;
+  margin: 0 auto;
 }
 .btn-home,
 .btn2-home {
   position: absolute;
   top:40px;
-  left:450px;
+ 
   display: block;
   cursor: pointer;
   width: 300px;
@@ -193,8 +194,7 @@ AtomSpinner{
   cursor: pointer;
   background: white;
   color:grey;
-  position: absolute;
-  top:20px;
+  
   margin-top: 0px;
   z-index: -1;
   -webkit-filter: blur(30px);
@@ -206,7 +206,7 @@ AtomSpinner{
 .btn2-city {
   position: absolute;
   top:40px;
-  left:800px;
+  margin-left:300px;
   display: block;
   cursor: pointer;
   width: 300px;
