@@ -5,7 +5,7 @@ export default styled.div`
   max-width: 300px;
   /* padding-right: 0; */
   left: 0px;
-  top: -440px;
+  top: -462px;
   border-radius: 9999px;
   display: flex;
   flex-wrap: wrap;

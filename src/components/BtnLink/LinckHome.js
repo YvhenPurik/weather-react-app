@@ -16,9 +16,9 @@ import '../../App.css';
      render(){
         return(
             <Link to="/" >  
-               <div className="btnHolder">
+               <div className="btnHolder-home">
           
-          <div  class="btn-city">Home{this.state.sevedCitiesCoutn}
+          <div  class="btn-city">Back{this.state.sevedCitiesCoutn}
           
           </div>
        </div> 

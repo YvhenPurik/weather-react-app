@@ -5,22 +5,23 @@ html, body {
   width:100%;
 }
 .App {
+  padding-top:100px;
   text-align: center;
   min-height: 100vh;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
   height: 100%;
 	color: #fff;
 	background: linear-gradient(-45deg, rgb(240, 116, 78), rgb(235, 67, 117), rgb(34, 167, 216), rgb(35, 213, 145));
 	background-size: 400% 400%;
-	-webkit-animation: Gradizzle 14s ease infinite;
+	/* -webkit-animation: Gradizzle 14s ease infinite;
 	-moz-animation: Gradizzle 15s ease infinite;
-  animation: Gradizzle 15s ease infinite;
-  padding: 0;
+  animation: Gradizzle 15s ease infinite; */
+  
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -46,15 +47,15 @@ html, body {
 	color: #fff;
 	background: linear-gradient(-45deg, rgb(240, 116, 78), rgb(235, 67, 117), rgb(34, 167, 216), rgb(35, 213, 145));
 	background-size: 400% 400%;
-	-webkit-animation: Gradizzle 14s ease infinite;
+	/* -webkit-animation: Gradizzle 14s ease infinite;
 	-moz-animation: Gradizzle 15s ease infinite;
-  animation: Gradizzle 15s ease infinite;
+  animation: Gradizzle 15s ease infinite; */
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 @-webkit-keyframes Gradizzle {
@@ -123,7 +124,7 @@ code {
 	margin: 20px;
 	border-radius: 5px;
   position: relative;
-  top:-200px;
+  top:-220px;
 }
 .card p{
   color:grey;
@@ -175,12 +176,16 @@ AtomSpinner{
   width: 180px;
   margin: 0 auto;
 }
+.btnHolder-home{
+  width: 240px;
+  margin: 0 auto;
+}
 
 
 .btn-city,
 .btn2-city {
   position: absolute;
-  top:10px;
+  top:110px;
   margin:0 auto;
   display: block;
   cursor: pointer;
