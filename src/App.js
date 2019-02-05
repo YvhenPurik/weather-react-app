@@ -131,14 +131,15 @@ if (this.state.inputCity !== '') {
     return (
       <div className="App">
       <BtnLink/>
+      
+      <ButtonGeo 
+            ClickBtnGeo={this.getLocation}
+            />
         <header className="App-header">
         
           <Holder className="holder">
          
 
-            <ButtonGeo 
-            ClickBtnGeo={this.getLocation}
-            />
 
            <InputCity 
            change={(e) => this.setState({inputCity: e.target.value})} 

@@ -1,9 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:300';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css';
-
+html, body {
+  overflow-x:hidden;
+  width:100%;
+}
 .App {
   text-align: center;
-  min-height: 130vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,12 +15,11 @@
   color: white;
   height: 100%;
 	color: #fff;
-	background: linear-gradient(-45deg, #EE7753, #E73C6E, #23A6D6, #23D5AC);
+	background: linear-gradient(-45deg, rgb(240, 116, 78), rgb(235, 67, 117), rgb(34, 167, 216), rgb(35, 213, 145));
 	background-size: 400% 400%;
-	-webkit-animation: Gradizzle 15s ease infinite;
+	-webkit-animation: Gradizzle 14s ease infinite;
 	-moz-animation: Gradizzle 15s ease infinite;
   animation: Gradizzle 15s ease infinite;
-  margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +34,7 @@
 
 .App-header {
   
-  min-height: 600px;
+  min-height: 1000px;
   min-width: 100%;
   display: flex;
   flex-direction: column;
@@ -121,7 +123,7 @@ code {
 	margin: 20px;
 	border-radius: 5px;
   position: relative;
-  top:20px;
+  top:-200px;
 }
 .card p{
   color:grey;
@@ -170,46 +172,19 @@ AtomSpinner{
 }
 
 .btnHolder{
-  width: 600px;
+  width: 180px;
   margin: 0 auto;
 }
-.btn-home,
-.btn2-home {
-  position: absolute;
-  top:40px;
- 
-  display: block;
-  cursor: pointer;
-  width: 300px;
-  height: 50px;
-  font-size: 30px;
-  text-align: center;
-  /* line-height: 40px; */
-  color: rgba(255,255,255,0.9);
-  border-radius: 50px;
-  border:2px solid white;
-  background: transparent;
-}
-.btn2-home {
-  cursor: pointer;
-  background: white;
-  color:grey;
-  
-  margin-top: 0px;
-  z-index: -1;
-  -webkit-filter: blur(30px);
-          filter: blur(30px);
-  opacity: 0.8;
-}
+
 
 .btn-city,
 .btn2-city {
   position: absolute;
-  top:40px;
-  margin-left:300px;
+  top:10px;
+  margin:0 auto;
   display: block;
   cursor: pointer;
-  width: 300px;
+  width: 240px;
   height: 50px;
   font-size: 30px;
   text-align: center;

@@ -18,7 +18,7 @@ import '../../App.css';
                 id="search"
                 placeholder="Enter City...Eng"
               />
-              <Tooltip className="tooltip" title="Search location" placement="bottom">
+              {/* <Tooltip className="tooltip" title="Search location" placement="bottom">
                 <button onClick={props.btnClick}>
                   <svg
                     className="change-color"
@@ -31,7 +31,7 @@ import '../../App.css';
                     <path d="M0 0h24v24H0z" fill="none" />
                   </svg>
                 </button>
-              </Tooltip>
+              </Tooltip> */}
             </WrapInput>
      )
          

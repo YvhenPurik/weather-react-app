@@ -5,8 +5,8 @@ export default styled.button`
   height: 55px;
   z-index: 1000;
   position: relative;
-  top: -260px;
-  left: 22px;
+  top: 0px;
+  left: -122px;
   background: #f72652;
   border-radius: 9999px;
   /* border-top-right-radius:5px;

@@ -15,10 +15,10 @@ import '../../App.css';
      }
      render(){
         return(
-            <Link to="/cities" >  
+            <Link to="/" >  
                <div className="btnHolder">
           
-          <div onClick={this.handlClick} class="btn-city">Saved cities{this.state.sevedCitiesCoutn}
+          <div  class="btn-city">Home{this.state.sevedCitiesCoutn}
           
           </div>
        </div> 
